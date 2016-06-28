@@ -1,5 +1,5 @@
 {
-  "name": "angular2-quickstart",
+  "name": "Driverslogg",
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -25,7 +25,7 @@
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-beta.6",
     "zone.js": "^0.6.12",
-    "angular2-in-memory-web-api": "0.0.7",
+    "angular2-in-memory-web-api": "0.0.11",
     "bootstrap": "^3.3.6"
   },
   "devDependencies": {

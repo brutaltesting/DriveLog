@@ -1,6 +1,31 @@
 ﻿import { Component } from '@angular/core';
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
+
+import { DriverService } from './driver.service';
+import { DriverComponent } from './driver.component';
+
 @Component({
+
     selector: 'my-app',
-    template: '<h1>Körjournal</h1>'
+    template: `<h1>{{title}}</h1>
+        <a [routerLink]="['Driver']">Driver</a>
+        <router-outlet></router-outlet>`,
+    directives: [ROUTER_DIRECTIVES],
+    providers: [
+        ROUTER_PROVIDERS,
+        DriverService]
+
 })
-export class AppComponent { }
+
+@RouteConfig([
+    {
+        path: '/driver',
+        name: 'Driver',
+        component: DriverComponent,
+        useAsDefault: false
+    }
+])
+
+export class AppComponent {
+    title = 'Körjournal';
+}

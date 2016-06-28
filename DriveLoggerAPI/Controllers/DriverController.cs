@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 using DriveLoggerAPI.Models;
 using Newtonsoft.Json;
@@ -20,7 +16,6 @@ namespace DriveLoggerAPI.Controllers
             var dr1 = JsonConvert.SerializeObject(driver1);
             var dr2 = JsonConvert.SerializeObject(driver2);
             return new List<DriverModel>() { driver1, driver2 };
-            //return new string[] { dr1, dr2 };
         }
 
         // GET: api/Driver/5

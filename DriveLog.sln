@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveLogAPI", "DriveLogAPI\DriveLogAPI.csproj", "{7862270C-BC54-435F-9425-838EF86F4280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveLogAPI.Tests", "DriveLogAPI.Tests\DriveLogAPI.Tests.csproj", "{A7441CE3-2D8B-4949-A6C4-E45225D88AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveLogWeb", "DriveLogWeb\DriveLogWeb.csproj", "{759C0020-AE3F-4127-8681-B919D876B03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveLoggerAPI", "DriveLoggerAPI\DriveLoggerAPI.csproj", "{72EB038C-C3D7-48BB-8E44-E940BE78A3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveLoggerAPI.Tests", "DriveLoggerAPI.Tests\DriveLoggerAPI.Tests.csproj", "{03E49673-62FF-4CEB-B341-7166E728B3FB}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DriveLogWebNg2", "WebApplication1\DriveLogWebNg2.xproj", "{F6C5528A-7637-4B18-A598-D9FF7C277FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7862270C-BC54-435F-9425-838EF86F4280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7862270C-BC54-435F-9425-838EF86F4280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7862270C-BC54-435F-9425-838EF86F4280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7862270C-BC54-435F-9425-838EF86F4280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7441CE3-2D8B-4949-A6C4-E45225D88AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7441CE3-2D8B-4949-A6C4-E45225D88AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7441CE3-2D8B-4949-A6C4-E45225D88AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7441CE3-2D8B-4949-A6C4-E45225D88AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759C0020-AE3F-4127-8681-B919D876B03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759C0020-AE3F-4127-8681-B919D876B03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759C0020-AE3F-4127-8681-B919D876B03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EB038C-C3D7-48BB-8E44-E940BE78A3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EB038C-C3D7-48BB-8E44-E940BE78A3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EB038C-C3D7-48BB-8E44-E940BE78A3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EB038C-C3D7-48BB-8E44-E940BE78A3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E49673-62FF-4CEB-B341-7166E728B3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E49673-62FF-4CEB-B341-7166E728B3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E49673-62FF-4CEB-B341-7166E728B3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E49673-62FF-4CEB-B341-7166E728B3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C5528A-7637-4B18-A598-D9FF7C277FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C5528A-7637-4B18-A598-D9FF7C277FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C5528A-7637-4B18-A598-D9FF7C277FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C5528A-7637-4B18-A598-D9FF7C277FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
