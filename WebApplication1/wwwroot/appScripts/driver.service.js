@@ -15,6 +15,7 @@ var DriverService = (function () {
     function DriverService(http) {
         this.http = http;
         this.driversUrl = 'http://localhost:57177/api/driver';
+        this.drivers = [];
     }
     DriverService.prototype.getDrivers = function () {
         return this.http.get(this.driversUrl)

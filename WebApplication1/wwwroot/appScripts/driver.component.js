@@ -10,12 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var driver_service_1 = require('./driver.service');
-var Driver = (function () {
-    function Driver() {
-    }
-    return Driver;
-}());
-exports.Driver = Driver;
+var driverdetails_component_1 = require('./driverdetails.component');
 var Company = (function () {
     function Company() {
     }
@@ -49,8 +44,8 @@ var DriverComponent = (function () {
     DriverComponent = __decorate([
         core_1.Component({
             selector: 'driver-section',
-            providers: [driver_service_1.DriverService],
-            template: "<table>\n    <tr> <th>F\u00F6rare </th><th>F\u00F6retag</th><th>Bil</th> </tr>    \n    <tr><td> {{driver.name}}</td><td>{{company.name}}</td><td>{{car.regnr}}</td></tr> \n    <tr><td>{{driver.socialsec}}</td><td>{{company.orgnumber}}</td></tr>\n    </table> \n    <ul>\n        <li *ngFor=\"let drv of drivers;\">{{drv.name}}</li>\n    </ul>\n"
+            templateUrl: './driver.html',
+            directives: [driverdetails_component_1.DriverDetails]
         }), 
         __metadata('design:paramtypes', [driver_service_1.DriverService])
     ], DriverComponent);

@@ -20,7 +20,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'my-app',
             template: "<h1>{{title}}</h1>\n        <p>app.ts</p>\n        <a [routerLink]=\"['Driver']\">Driver</a>\n        <router-outlet></router-outlet>",
-            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES, driver_component_1.DriverComponent],
             providers: [
                 router_deprecated_1.ROUTER_PROVIDERS,
                 driver_service_1.DriverService]

@@ -1,24 +1,25 @@
 ﻿import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import { Driver } from './driver.component';
+import { DriverDetails } from './driverdetails.component';
 
 
 @Injectable()
 export class DriverService {
     private driversUrl = 'http://localhost:57177/api/driver';
+    private drivers: DriverDetails[] = [];
 
     constructor(private http: Http) { }
 
-    getDrivers(): 
-        Promise<Driver[]> {
+    public getDrivers(): 
+        Promise<DriverDetails[]> {
                 return this.http.get(this.driversUrl)
                 .toPromise()
                 .then(response => response.json().data)
                 .catch(this.handleError);
     }
 
-    private post(driver: Driver): Promise<Driver> {
+    private post(driver: DriverDetails): Promise<DriverDetails> {
         let headers = new Headers({
             'Content-Type': 'application/json'
         });
@@ -30,7 +31,7 @@ export class DriverService {
             .catch(this.handleError);
     }
 
-    private put(driver: Driver) {
+    private put(driver: DriverDetails) {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
 
@@ -43,7 +44,7 @@ export class DriverService {
             .catch(this.handleError);
     }
 
-    save(driver: Driver): Promise<Driver> {
+    save(driver: DriverDetails): Promise<DriverDetails> {
         if (driver.id) {
             return this.put(driver);
         }

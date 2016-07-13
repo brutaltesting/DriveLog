@@ -1,4 +1,4 @@
-﻿import { Driver } from './driver.component';
+﻿import { DriverDetails } from './driverdetails.component';
 export class InMemoryDataService {
     createDb() {
         let drivers = [

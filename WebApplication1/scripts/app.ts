@@ -11,7 +11,7 @@ import { DriverComponent } from './driver.component';
         <p>app.ts</p>
         <a [routerLink]="['Driver']">Driver</a>
         <router-outlet></router-outlet>`,
-    directives: [ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES, DriverComponent],
     providers: [
         ROUTER_PROVIDERS,
         DriverService]

@@ -49,8 +49,8 @@ gulp.task('watch.ts', ['ts'], function () {
 });
 
 gulp.task("copy-deps:rxjs", function () {
-    return gulp.src(paths.npmSrc + '/rxjs/bundles/*.*', { base: paths.npmSrc + '/rxjs/bundles/' })
-         .pipe(gulp.dest(paths.npmLibs + '/rxjs/'));
+    return gulp.src('node_modules/rxjs/bundles/*.*', { base: 'node_modules/rxjs/bundles/' })
+         .pipe(gulp.dest('wwwroot/libs/rxjs/'));
 });
 
 gulp.task('default', ['scriptsNStyles', 'watch']);
